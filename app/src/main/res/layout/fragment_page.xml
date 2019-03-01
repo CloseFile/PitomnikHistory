@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    app:layoutDescription="@xml/scene_about_history">
+    <!--app:showPaths="true"-->
+    <!--<androidx.cardview.widget.CardView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="4dp"-->
+    <!--app:cardElevation="4dp"-->
+    <!--app:cardCornerRadius="8dp"-->
+    <!--&gt;-->
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/pitomnik_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/background"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+    <!--</androidx.cardview.widget.CardView>-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/title_first_back_tv"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Питомник"-->
+    <!--android:textAlignment="center"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textSize="24sp" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/title_second_back_tv"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Лукашёва"-->
+    <!--android:textAlignment="center"-->
+    <!--android:textColor="@color/colorPrimary"-->
+    <!--android:textSize="24sp"-->
+    <!--/>-->
+
+
+    <include layout="@layout/content_scrolling_history" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btn_info"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/wcircle"
+        app:srcCompat="@drawable/ic_info_black_24dp" />
+
+    <ImageView
+        android:id="@+id/image_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rotation="0"
+        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+    <com.ctapk.pitomnikhistory.ExampleFlyinBounceHelper
+        android:id="@+id/helper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="image_arrow" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
