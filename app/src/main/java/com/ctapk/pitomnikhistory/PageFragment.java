@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.constraintlayout.motion.widget.MotionLayout;
 import androidx.constraintlayout.utils.widget.ImageFilterView;
 import androidx.fragment.app.Fragment;
 
@@ -47,7 +46,7 @@ public class PageFragment extends Fragment {
             imageFilterView.setImageResource(R.drawable.lukashev);
         } else if (mPage == 2) {
             textView.setText(R.string.halfcenter);
-            imageFilterView.setImageResource(R.drawable.timoshin_color);
+            imageFilterView.setImageResource(R.drawable.lukashev1);
         } else if (mPage == 3) {
             textView.setText(R.string.large_text_3);
             imageFilterView.setImageResource(R.drawable.timoshin_color);
@@ -68,17 +67,17 @@ public class PageFragment extends Fragment {
             imageFilterView.setImageResource(R.drawable.best);
         }
 
-        view.findViewById(R.id.btn_info).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                MotionLayout motionLayout=view.findViewById(R.id.motionLayout);
-                if (motionLayout.getProgress() > 0.5f) {
-                    motionLayout.transitionToStart();
-                } else {
-                    motionLayout.transitionToEnd();
-                }
-            }
-        });
+//        view.findViewById(R.id.btn_info).setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                MotionLayout motionLayout=view.findViewById(R.id.motionLayout);
+//                if (motionLayout.getProgress() > 0.5f) {
+//                    motionLayout.transitionToStart();
+//                } else {
+//                    motionLayout.transitionToEnd();
+//                }
+//            }
+//        });
 
         return view;
     }

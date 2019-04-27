@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
+    app:showPaths="true"
     app:layoutDescription="@xml/scene_about_history">
     <!--app:showPaths="true"-->
     <!--<androidx.cardview.widget.CardView-->
@@ -22,29 +23,7 @@
         android:layout_height="match_parent"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/background"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
-    <!--</androidx.cardview.widget.CardView>-->
-
-
-    <!--<TextView-->
-    <!--android:id="@+id/title_first_back_tv"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:text="Питомник"-->
-    <!--android:textAlignment="center"-->
-    <!--android:textColor="@color/colorPrimary"-->
-    <!--android:textSize="24sp" />-->
-
-    <!--<TextView-->
-    <!--android:id="@+id/title_second_back_tv"-->
-    <!--android:layout_width="wrap_content"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:text="Лукашёва"-->
-    <!--android:textAlignment="center"-->
-    <!--android:textColor="@color/colorPrimary"-->
-    <!--android:textSize="24sp"-->
-    <!--/>-->
+     />
 
 
     <include layout="@layout/content_scrolling_history" />
